@@ -48,15 +48,26 @@ mlops-unit1/
 * Separated code, data, and models
 * Created requirements.txt and README.md
 
+## 🔁 Reproducibility Steps
 ---
+## Follow these steps to recreate the project:
 
-### 🔹 Experiment 4: Reproducibility
+1. Clone the repository:
+   git clone https://github.com/YOUR_USERNAME/mlops-unit1.git
 
-* Environment setup instructions
-* Clone and run project in new environment
+2. Navigate to project:
+   cd mlops-unit1
 
+3. Create virtual environment:
+   python -m venv venv
+   venv\Scripts\activate
+
+4. Install dependencies:
+   pip install -r requirements.txt
+
+5. Run the project:
+   python src/train_model.py
 ---
-
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
