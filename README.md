@@ -1,12 +1,94 @@
-# MLOps Unit 1
+# MLOps Unit 1 Lab
 
-## Project Structure
-- data/ : dataset files
-- src/ : source code
-- models/ : saved ML models
+This repository contains all practical exercises for MLOps Unit 1, including Git version control, machine learning workflow, project organization, and reproducibility.
 
-## Experiments
-1. Git & Version Control
-2. ML Workflow
-3. Project Structure
-4. Reproducibility
+---
+
+## 📁 Project Structure
+
+mlops-unit1/
+│
+├── data/              # Dataset files (if any)
+├── src/               # Source code for ML models
+│   └── train_model.py
+├── models/            # Saved trained models
+│   └── iris_model.pkl
+├── requirements.txt   # Python dependencies
+└── README.md          # Project documentation
+
+---
+
+## 🧪 Experiments
+
+### 🔹 Experiment 1: Git & Version Control
+- Initialized Git repository
+- Created Python script
+- Committed changes
+- Created and merged branch (`experiment-v1`)
+- Pushed code to GitHub
+
+---
+
+### 🔹 Experiment 2: Machine Learning Workflow
+- Loaded Iris dataset using sklearn
+- Split data into training and testing sets
+- Trained Logistic Regression model
+- Evaluated model using accuracy and classification report
+- Saved trained model using pickle
+
+---
+
+### 🔹 Experiment 3: Project Structure
+- Organized files into standard MLOps structure
+- Separated code, data, and models
+- Created requirements.txt and README.md
+
+---
+
+### 🔹 Experiment 4: Reproducibility (To be done)
+- Environment setup instructions
+- Clone and run project in new environment
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/mlops-unit1.git
+cd mlops-unit1
+
+2. Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate   # For Windows
+3. Install Dependencies
+pip install -r requirements.txt
+▶️ How to Run
+python src/train_model.py
+
+
+📊 Output
+Displays dataset preview
+Shows training and testing data size
+Prints model accuracy
+Displays classification report
+Saves trained mode
+💾 Model
+Model is saved in models/iris_model.pkl
+Can be reused for predictions
+
+🧠 Technologies Used
+Python
+Pandas
+Scikit-learn
+Git & GitHub
+
+👨‍💻 Author
+Kumkum Mishra
+B.Tech CSE
+2301010457
+
+📌 Notes
+This project demonstrates basic MLOps workflow
+Useful for understanding version control + ML pipeline
