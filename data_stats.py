@@ -11,3 +11,4 @@ df = pd.DataFrame(data)
 # Print basic statistics
 print("Dataset:\n", df)
 print("\nStatistics:\n", df.describe())
+print("\nMean Salary:", df["Salary"].mean())
