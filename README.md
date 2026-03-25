@@ -48,6 +48,22 @@ mlops-unit1/
 * Separated code, data, and models
 * Created requirements.txt and README.md
 
+---
+
+### 🔹 Experiment 4: MLflow Experiment Tracking
+
+* Used Iris dataset for training
+* Trained RandomForestClassifier model
+* Logged parameters:
+  - n_estimators
+  - max_depth
+* Logged metric:
+  - accuracy
+* Saved trained model using MLflow
+* Visualized experiments using MLflow UI (http://127.0.0.1:5000)
+
+---
+
 ## 🔁 Reproducibility Steps
 ---
 ## Follow these steps to recreate the project:
