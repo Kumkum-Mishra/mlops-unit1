@@ -1,0 +1,4 @@
+2026-04-04 01:25:43,283 - INFO - Starting model training...
+2026-04-04 01:25:43,405 - INFO - Model training completed
+2026-04-04 01:25:43,405 - INFO - Model accuracy: 0.9333333333333333
+2026-04-04 01:25:43,405 - INFO - Model performance is good

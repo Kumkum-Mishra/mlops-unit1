@@ -69,7 +69,7 @@ mlops-unit1/
 ## Follow these steps to recreate the project:
 
 1. Clone the repository:
-   git clone https://github.com/YOUR_USERNAME/mlops-unit1.git
+   git clone https://github.com/Kumkum-Mishra/mlops-unit1.git
 
 2. Navigate to project:
    cd mlops-unit1
@@ -89,7 +89,7 @@ mlops-unit1/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/mlops-unit1.git
+git clone https://github.com/Kumkum-Mishra/mlops-unit1.git
 cd mlops-unit1
 ```
 
