@@ -1,6 +1,6 @@
 # MLOps Unit 1 Lab
 
-This repository contains all practical exercises for MLOps Unit 1, including Git version control, machine learning workflow, project organization, and reproducibility.
+This repository contains all practical exercises for MLOps Unit 1, including Git version control, machine learning workflow, experiment tracking, versioning, CI/CD, deployment strategies, monitoring, and optimization.
 
 ---
 
@@ -9,11 +9,16 @@ This repository contains all practical exercises for MLOps Unit 1, including Git
 ```
 mlops-unit1/
 │
-├── data/              
-├── src/               
-│   └── train_model.py
+├── data/               
+├── src/                
+│   ├── train_model.py
+│   ├── mlflow_exp.py
+│   ├── deployment.py
+│   ├── monitor.py
+│   ├── mnist_opt.py
+│   └── train_cancer.py
 ├── models/            
-│   └── iris_model.pkl
+├── .github/workflows/ 
 ├── requirements.txt   
 └── README.md          
 ```
@@ -27,7 +32,7 @@ mlops-unit1/
 * Initialized Git repository
 * Created Python script
 * Committed changes
-* Created and merged branch (experiment-v1)
+* Created and merged branch
 * Pushed code to GitHub
 
 ---
@@ -38,102 +43,107 @@ mlops-unit1/
 * Split data into training and testing sets
 * Trained Logistic Regression model
 * Evaluated model using accuracy and classification report
-* Saved trained model using pickle
+* Saved trained model
 
 ---
 
 ### 🔹 Experiment 3: Project Structure
 
-* Organized files into standard MLOps structure
-* Separated code, data, and models
+* Organized files into MLOps-friendly structure
+* Separated data, source code, and models
 * Created requirements.txt and README.md
 
 ---
 
 ### 🔹 Experiment 4: MLflow Experiment Tracking
 
-* Used Iris dataset for training
-* Trained RandomForestClassifier model
-* Logged parameters:
-  - n_estimators
-  - max_depth
-* Logged metric:
-  - accuracy
-* Saved trained model using MLflow
-* Visualized experiments using MLflow UI (http://127.0.0.1:5000)
+* Trained RandomForest model
+* Logged parameters and metrics
+* Saved model using MLflow
+* Visualized results in MLflow UI
+
+---
+
+### 🔹 Experiment 5: DVC Versioning
+
+* Initialized DVC
+* Tracked dataset using `dvc add`
+* Configured remote storage
+* Pushed data using DVC
+
+---
+
+### 🔹 Experiment 6: CI/CD Pipeline
+
+* Created GitHub Actions workflow
+* Automated model training and evaluation
+* Triggered pipeline on code push
+* Ensured model performance using accuracy threshold
+
+---
+
+### 🔹 Experiment 8: Deployment Strategies
+
+* Implemented A/B testing (Model A vs Model B)
+* Compared models using accuracy
+* Selected best model for deployment
+* Created simple Flask API
+
+---
+
+### 🔹 Experiment 9: Monitoring & Logging
+
+* Implemented logging using Python logging module
+* Monitored model accuracy
+* Created log file for tracking execution
+* Implemented alert system for low accuracy
+
+---
+
+### 🔹 Experiment 10: Optimization & Security
+
+* Trained MNIST model using TensorFlow
+* Applied quantization (reduced precision)
+* Simulated adversarial attack using noise
+* Compared model performance before and after attack
 
 ---
 
 ## 🔁 Reproducibility Steps
----
-## Follow these steps to recreate the project:
 
 1. Clone the repository:
+
+   ```
    git clone https://github.com/Kumkum-Mishra/mlops-unit1.git
-
-2. Navigate to project:
    cd mlops-unit1
+   ```
 
-3. Create virtual environment:
+2. Create virtual environment:
+
+   ```
    python -m venv venv
    venv\Scripts\activate
+   ```
 
-4. Install dependencies:
+3. Install dependencies:
+
+   ```
    pip install -r requirements.txt
-
-5. Run the project:
-   python src/train_model.py
----
-## ⚙️ Installation & Setup
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/Kumkum-Mishra/mlops-unit1.git
-cd mlops-unit1
-```
-
----
-
-### 2. Create Virtual Environment
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
----
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
+   ```
 
 ---
 
 ## ▶️ How to Run
 
-```bash
-python src/train_model.py
+Example:
+
 ```
-
----
-
-## 📊 Output
-
-* Displays dataset preview
-* Shows training and testing data size
-* Prints model accuracy
-* Displays classification report
-* Saves trained model
-
----
-
-## 💾 Model
-
-* Model is saved in models/iris_model.pkl
-* Can be reused for predictions
+python src/train_model.py
+python src/mlflow_exp.py
+python src/deployment.py
+python src/monitor.py
+python src/mnist_opt.py
+```
 
 ---
 
@@ -142,7 +152,11 @@ python src/train_model.py
 * Python
 * Pandas
 * Scikit-learn
-* Git & GitHub
+* MLflow
+* DVC
+* GitHub Actions (CI/CD)
+* Flask
+* TensorFlow
 
 ---
 
@@ -156,5 +170,8 @@ B.Tech CSE
 
 ## 📌 Notes
 
-* This project demonstrates basic MLOps workflow
-* Useful for understanding version control and ML pipeline
+* Demonstrates complete MLOps lifecycle
+* Covers versioning, tracking, deployment, monitoring, and optimization
+* Useful for understanding real-world ML pipelines
+
+---
